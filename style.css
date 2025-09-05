@@ -205,10 +205,10 @@
       text-align: center;
       margin-right: 8px;
       border-radius: 100%;
-      -webkit-transition:;
-      -moz-transition:;
-      -ms-transition:;
-      -o-transition:;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
 }
 
     .social-icons a:hover {
@@ -227,10 +227,10 @@
       border-radius: 50%;
       border: 3px solid #38bdf8;
       box-shadow: 0 0 25px #38bdf8;
-      -webkit-border-radius:;
-      -moz-border-radius:;
-      -ms-border-radius:;
-      -o-border-radius:;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
 }
       .hero-image img:hover {
             /*transform: scale(0.5);
@@ -246,11 +246,10 @@
 
     /* Responsive Design */
     @media (max-width: 1024px) {
-      .navbar{
-        top:0;
-      }
+      
       .hero {
         padding: 40px 6%;
+        margin-top: 50px;
       }
 
       .hero-content h1 {
@@ -268,9 +267,12 @@
     }
 
     @media (max-width: 768px) {
+       .hero{
+        margin-top: 50px;
+      }
       .navbar {
         padding: 15px 6%;
-        top:0;
+        
       }
 
       .nav-links {
@@ -338,8 +340,8 @@
 
 
     @media (max-width: 480px) {
-      .navbar{
-        top:0;
+      .hero{
+        margin-top: 50px;
       }
       .hero-content h1 {
         font-size: 28px;
@@ -365,8 +367,13 @@
     }
 
     @media (max-width: 400px){
+      .hero{
+        margin-top: 50px;
+      }
       .navbar{
-        top:0;}
+        
+        top:0;
+      }
        .navbar  .resume-btn{
         font-size: 11px;
         padding: 6 px 10px;
