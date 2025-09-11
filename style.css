@@ -228,7 +228,9 @@
       height: 260px;
       border-radius: 50%;
       background: radial-gradient(circle at center,#0055ff,#001133);
-      border: 3px dashed white;
+      /* border: 3px dashed white; */
+          border: 3px solid #38bdf8;
+      
       box-shadow: 0 0 25px #38bdf8;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
