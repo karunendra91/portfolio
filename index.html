@@ -1,256 +1,700 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>karunendra</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karunendra Singh - Full Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Full Stack Web Developer Portfolio - HTML, CSS, JavaScript & Modern Web Development"
+    />
     <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
-  />
-  <!-- Devicon -->
-  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet"
-  />
-  <link rel="icon" href="image/bag.png" type="image/x-icon" style="border: 2px solid; border-radius: 50%;">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
-      <!-- start Navbar -->
-       <div class="nav">
-  <nav class="navbar">
-
-    <p>  <a href="#"><span >Karunendra</span></a></p>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills-section">Skills</a></li>
-      <li><a href="#project">Projects</a></li>
-      <li><a href="#certificate">Certifications</a></li>
-      <li><a href="#footer">Contact</a></li>
-    </ul>
-    <a href="image/resume1.pdf" class="resume-btn">Download Resume</a>
-    <span class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></span>
-  </nav></div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Devicon -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="image/download.png"
+      type="image/x-icon"
+      style="border: 2px solid; border-radius: 50%"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-section">
+          <a href="#" class="logo">
+            <span class="logo-text">Karunendra</span>
+          </a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills-section" class="nav-link">Skills</a></li>
+          <li><a href="#project" class="nav-link">Projects</a></li>
+          <li><a href="#certificate" class="nav-link">Certifications</a></li>
+          <li><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <div
+            class="theme-toggle"
+            id="themeToggle"
+            title="Toggle Dark/Light Mode"
+          >
+            <i class="fas fa-moon"></i>
+          </div>
+          <a href="image/resume1.pdf" class="resume-btn">Resume</a>
+          <span class="menu-toggle" id="menuToggle"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </div>
+      </div>
+      <div class="navbar-progress-bar"></div>
+    </nav>
     <!-- end Navbar -->
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h3>Hello, I'm</h3>
-      <h1>Karunendra Singh</h1>
-      <h2><span id="typed"></span> 💻</h2>
-      <p>
-  A passionate and dedicated Full Stack Web Developer with a strong command of HTML, CSS, JavaScript, and backend tools. I love turning ideas into real, responsive, and user-friendly web applications. I'm currently pursuing my B.Tech and have developed personal and academic projects that showcase my ability to design, build, and deploy functional websites. 
-      </p>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-animation"></div>
 
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a href="https://github.com/karunendra91" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/karunendra-patel-188250256/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <div class="hero-content">
+        <div class="greeting">
+          <span>Hello, I'm</span>
+        </div>
+        <h1 class="hero-title" aria-label="Karunendra Singh">
+          <span class="hero-name">Karunendra Singh</span>
+        </h1>
+        <h2 class="role-text">
+          <span id="typed"></span>
+          <span class="cursor">💻</span>
+        </h2>
+        <p class="hero-description">
+          A passionate Full Stack Web Developer crafting responsive, interactive
+          web experiences. Specializing in modern frontend technologies with a
+          strong backend foundation. Currently pursuing B.Tech and building
+          projects that merge creativity with functionality.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+          <a href="#project" class="btn-primary">View My Work</a>
+          <a href="#footer" class="btn-secondary">Get In Touch</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a
+            href="https://github.com/karunendra91"
+            target="_blank"
+            class="social-icon github"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/karunendra-patel-188250256/"
+            target="_blank"
+            class="social-icon linkedin"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://x.com/karunendra25"
+            target="_blank"
+            class="social-icon twitter"
+            title="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
       </div>
-    </div>
 
-    <div class="hero-image">
-      <img src="image/own.jpg" alt="karunendra" >
-    </div>
-  </section>
+      <div class="hero-image-container">
+        <div class="image-wrapper">
+          <img src="image/own.jpg" alt="Karunendra Singh" class="hero-image" />
+          <div class="image-glow"></div>
+        </div>
+      </div>
+    </section>
     <!-- Hero Section End -->
 
-  <!-- Education Section -->
-<section class="education" id="education">
-  <h2 class="section-title">Education 🎓</h2>
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2 class="section-title">Education 🎓</h2>
 
-  <div class="edu-card" data-animate>
-    <span class="edu-date">2022-2026 | Pursuing</span>
-    <h3>Bachelor of Engineering in Computer Science</h3>
-    <p class="edu-institute">Vindhya Institute of Technology & Science Satna , 485001 | VITS</p>
-    <p class="edu-detail">CGPA: 7.55</p>
-  </div>
+      <div class="edu-cards-wrapper">
+        <div class="edu-card" data-animate>
+          <div class="edu-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-date">2022-2026 | Pursuing</span>
+            <h3>Bachelor of Engineering in Computer Science</h3>
+            <p class="edu-institute">
+              Vindhya Institute of Technology & Science Satna , 485001 | VITS
+            </p>
+            <p class="edu-detail">CGPA: 7.55</p>
+          </div>
+        </div>
 
-  <div class="edu-card" data-animate>
-    <span class="edu-date">2020-2022 | Completed</span>
-    <h3>MP-Board | Higher Secondary School</h3>
-    <p class="edu-institute">Govt. of Higher Secondray School Sitpura Satna, Satna 485001</p>
-    <p class="edu-detail">Percentage: 68% </p>
-  </div>
-</section>
+        <div class="edu-card" data-animate>
+          <div class="edu-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-date">2020-2022 | Completed</span>
+            <h3>MP-Board | Higher Secondary School</h3>
+            <p class="edu-institute">
+              Govt. of Higher Secondray School Sitpura Satna, Satna 485001
+            </p>
+            <p class="edu-detail">Percentage: 68%</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Education section end -->
 
     <!-- Skills Section start -->
 
-  <section class="skills-section" id="skills-section">
-    <div class="skills-title">
-      <i class="fas fa-solid fa-laptop-code"></i>
-      <span>Skills</span>
-    </div>
+    <section class="skills-section" id="skills-section">
+      <div class="skills-title">
+        <i class="fas fa-solid fa-laptop-code"></i>
+        <span>Skills</span>
+      </div>
 
-    <div class="skills-grid">
-      <div class="skill-card">
-        <i class="devicon-html5-plain colored"></i>
-        <p class="skill-name">HTML5</p>
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored"></i>
+          <p class="skill-name">HTML5</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored"></i>
+          <p class="skill-name">CSS3</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-react-original colored"></i>
+          <p class="skill-name">React</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-bootstrap-plain colored"></i>
+          <p class="skill-name">Bootstrap</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-c-plain colored"></i>
+          <p class="skill-name">C</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <p class="skill-name">MySQL</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-mongodb-plain colored"></i>
+          <p class="skill-name">MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored"></i>
+          <p class="skill-name">Git</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-github-original colored"></i>
+          <p class="skill-name">GitHub</p>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-vscode-plain colored"></i>
+          <p class="skill-name">VS Code</p>
+        </div>
       </div>
-      <div class="skill-card">
-        <i class="devicon-css3-plain colored"></i>
-        <p class="skill-name">CSS3</p>
-      </div>
-      <div class="skill-card">
-        <i class="devicon-javascript-plain colored"></i>
-        <p class="skill-name">JavaScript</p>
-      </div>
-     
-      <div class="skill-card">
-        <i class="devicon-cplusplus-plain colored"></i>
-        <p class="skill-name">C++</p>
-      </div>
-      <div class="skill-card">
-        <i class="devicon-c-plain colored"></i>
-        <p class="skill-name">C</p>
-      </div>
-      <div class="skill-card">
-        <i class="devicon-php-plain colored"></i>
-        <p class="skill-name">PHP</p>
-      </div>
-      <!-- Add more cards similarly -->
-    </div>
-  </section>
-  <!-- skill section end -->
+    </section>
+    <!-- skill section end -->
 
     <!-- project section start -->
-     <div class="class-projetc" id="project">
-     <section class="cert-section">
-         <!-- <h2 class="section-title">Education 🎓</h2> -->
-<h2>Projects</h2>
-<p>Practical Implementations</p>
+    <div class="class-projetc" id="project">
+      <section class="projects-section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Practical Implementations & Portfolio Showcase
+          </p>
+        </div>
 
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card" data-project-index="0">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project2.png"
+                  alt="Personal Portfolio"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-description">
+                  A fully responsive portfolio showcasing my skills, projects,
+                  and certifications with smooth animations and modern design
+                  principles.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"
+                    ><i class="fas fa-code"></i> Full Stack</span
+                  >
+                  <span class="stat"
+                    ><i class="fas fa-check"></i> Responsive</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://karunendra.netlify.app/"
+                    class="btn-live"
+                    target="_blank"
+                  >
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/karunendra91/portfolio"
+                    class="btn-github"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div class="cert-card">
-<div class="cert-info">
-<h3>Portfolio</h3>
-<p >I built a dynamic, responsive experiences using HTML, CSS, and JavaScript.Whether it’s a responsive layout that adapts to every device, engaging micro-interactions that bring designs to life, or sleek navigation that feels effortless—I build with both function and flair</p>
-<p><strong>Tech Stack:  </strong> HTML , CSS , Javascript</p>
-<a href="https://github.com/karunendra91/portfolio" class="cert-btn">GitHub</a>
-<a href="https://karunendra.netlify.app/" class="cert-btn">View </a>
+          <!-- Project Card 2 -->
+          <div class="project-card" data-project-index="1">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project1.png"
+                  alt="LinkedIn Clone"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">LinkedIn Clone</h3>
+                <p class="project-description">
+                  A responsive LinkedIn clone featuring all major UI elements,
+                  user interactions, and professional styling matching the
+                  original design.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"><i class="fas fa-code"></i> Frontend</span>
+                  <span class="stat"
+                    ><i class="fas fa-check"></i> Responsive</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/karunendra91/Linkedin-clone"
+                    class="btn-live"
+                    target="_blank"
+                  >
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/karunendra91/Linkedin-clone"
+                    class="btn-github"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</div>
-<div class="cert-img">
-<img src="image/project2.png" alt="Certificate Image">
-</div>
-</div>
+          <!-- Project Card 3 -->
+          <div class="project-card" data-project-index="2">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project2.png"
+                  alt="E-Commerce Store"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">E-Commerce Store</h3>
+                <p class="project-description">
+                  A modern e-commerce platform with product filtering, shopping
+                  cart functionality, and smooth checkout experience using
+                  vanilla JavaScript.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"
+                    ><i class="fas fa-shopping-cart"></i> E-Commerce</span
+                  >
+                  <span class="stat"
+                    ><i class="fas fa-check"></i> Interactive</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a href="#" class="btn-live" target="_blank">
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a href="#" class="btn-github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div class="cert-card">
-<div class="cert-info">
-<h3>LinkedIn-Clone</h3>
-<p>I built a fully responsive LinkedIn clone using HTML, CSS, and JavaScript, faithfully replicating key UI elements like the navigation bar, profile layout, post feed, and interactive messaging panel.</p>
+          <!-- Project Card 4 -->
+          <div class="project-card" data-project-index="3">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project1.png"
+                  alt="Weather Dashboard"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">API</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Weather Dashboard</h3>
+                <p class="project-description">
+                  A real-time weather application that fetches live data from
+                  weather APIs, displays forecasts, and provides location-based
+                  information with animations.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"
+                    ><i class="fas fa-cloud"></i> API Integration</span
+                  >
+                  <span class="stat"
+                    ><i class="fas fa-check"></i> Real-time</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a href="#" class="btn-live" target="_blank">
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a href="#" class="btn-github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<p><strong>Tech Stack:  </strong> HTML , CSS , Javascript</p>
-<a href="https://github.com/karunendra91/Linkedin-clone" class="cert-btn">GitHub</a>
-<a href="https://github.com/karunendra91/Linkedin-clone" class="cert-btn">View </a>
+          <!-- Project Card 5 -->
+          <div class="project-card" data-project-index="4">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project2.png"
+                  alt="Task Manager App"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">LocalStorage</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Task Manager App</h3>
+                <p class="project-description">
+                  A productivity tool featuring task creation, categorization,
+                  priority levels, and local storage persistence for managing
+                  daily workflows efficiently.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"
+                    ><i class="fas fa-tasks"></i> Productivity</span
+                  >
+                  <span class="stat"
+                    ><i class="fas fa-check"></i> Persistent</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a href="#" class="btn-live" target="_blank">
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a href="#" class="btn-github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</div>
-<div class="cert-img">
-<img src="image/project1.png" alt="Certificate Image">
-</div>
-</div>
+          <!-- Project Card 6 -->
+          <div class="project-card" data-project-index="5">
+            <div class="project-card-wrapper">
+              <div class="project-image-container">
+                <img
+                  src="image/project1.png"
+                  alt="Movie Finder"
+                  class="project-image"
+                />
+                <div class="project-overlay">
+                  <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">API</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Movie Finder</h3>
+                <p class="project-description">
+                  Search and discover movies using TMDB API with advanced
+                  filtering, detailed information, ratings, and a beautiful grid
+                  layout with smooth interactions.
+                </p>
+                <div class="project-stats">
+                  <span class="stat"
+                    ><i class="fas fa-film"></i> API Integration</span
+                  >
+                  <span class="stat"><i class="fas fa-check"></i> Search</span>
+                </div>
+                <div class="project-buttons">
+                  <a href="#" class="btn-live" target="_blank">
+                    <i class="fas fa-globe"></i> Live Demo
+                  </a>
+                  <a href="#" class="btn-github" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- project section end -->
 
+    <!-- certificate section start -->
+    <div class="class-projetc" id="certificate">
+      <section class="cert-section">
+        <div class="section-header">
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">Professional Credentials & Learning Milestones</p>
+        </div>
 
+        <!-- Certificate Grid Container -->
+        <div class="certs-grid">
+          <!-- Certificate Card 1 -->
+          <div class="cert-card">
+            <div class="cert-card-wrapper">
+              <div class="cert-image-container">
+                <img
+                  src="image/certificate.jpg"
+                  alt="AI: Transformative Learning Certification"
+                  class="cert-image"
+                />
+                <div class="cert-overlay">
+                  <div class="cert-badge-group">
+                    <span class="cert-badge">AI & ML</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cert-content">
+                <h3 class="cert-title">AI: Transformative Learning</h3>
+                <p class="cert-organization">
+                  <i class="fas fa-building"></i>
+                  Edunet Foundation | ACITE | SAP | Microsoft
+                </p>
+                <div class="cert-skills">
+                  <span class="skill-tag">AI & Computer Vision</span>
+                  <span class="skill-tag">Machine Learning</span>
+                </div>
+                <div class="cert-footer">
+                  <p class="cert-year">
+                    <i class="fas fa-calendar-alt"></i>
+                    2024
+                  </p>
+                  <a
+                    href="image/certificate.jpg"
+                    class="cert-view-btn"
+                    target="_blank"
+                    title="View Certificate"
+                  >
+                    <i class="fas fa-external-link-alt"></i> View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</section>
-</div>
-<!-- project section end  -->
+          <!-- Certificate Card 2 -->
+          <div class="cert-card">
+            <div class="cert-card-wrapper">
+              <div class="cert-image-container">
+                <img
+                  src="image/micor.jpg"
+                  alt="Prompt Engineering with GitHub Copilot Certification"
+                  class="cert-image"
+                />
+                <div class="cert-overlay">
+                  <div class="cert-badge-group">
+                    <span class="cert-badge">Prompt Eng.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cert-content">
+                <h3 class="cert-title">Prompt Engineering with GitHub Copilot</h3>
+                <p class="cert-organization">
+                  <i class="fas fa-building"></i>
+                  Microsoft | SkillUP | Simplilearn
+                </p>
+                <div class="cert-skills">
+                  <span class="skill-tag">Prompt Engineering</span>
+                  <span class="skill-tag">AI Tools</span>
+                </div>
+                <div class="cert-footer">
+                  <p class="cert-year">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025
+                  </p>
+                  <a
+                    href="image/micor.jpg"
+                    class="cert-view-btn"
+                    target="_blank"
+                    title="View Certificate"
+                  >
+                    <i class="fas fa-external-link-alt"></i> View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- certificate section start -->
-     <div class="class-projetc" id="certificate">
-     <section class="cert-section">
-<h2>Certifications</h2>
-<p>Courses & Achievements</p>
+          <!-- Certificate Card 3 -->
+          <div class="cert-card">
+            <div class="cert-card-wrapper">
+              <div class="cert-image-container">
+                <img
+                  src="image/myimg.jpg"
+                  alt="Google AI Essentials Certification"
+                  class="cert-image"
+                />
+                <div class="cert-overlay">
+                  <div class="cert-badge-group">
+                    <span class="cert-badge">Gen AI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cert-content">
+                <h3 class="cert-title">Google AI Essentials</h3>
+                <p class="cert-organization">
+                  <i class="fas fa-building"></i>
+                  Coursera
+                </p>
+                <div class="cert-skills">
+                  <span class="skill-tag">Generative AI</span>
+                  <span class="skill-tag">AI Fundamentals</span>
+                  <span class="skill-tag">Prompt Engineering</span>
+                </div>
+                <div class="cert-footer">
+                  <p class="cert-year">
+                    <i class="fas fa-calendar-alt"></i>
+                    2025
+                  </p>
+                  <a
+                    href="image/myimg.jpg"
+                    class="cert-view-btn"
+                    target="_blank"
+                    title="View Certificate"
+                  >
+                    <i class="fas fa-external-link-alt"></i> View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- certificate section end  -->
 
-
-<div class="cert-card">
-<div class="cert-info">
-<h3>AI: Transformative Learning with TechSaksham</h3>
-<p>Edunet Foundation | ACITE | SAP | Microsoft</p>
-<p><strong>Key Skills:</strong> AI & Computer Vision (Machine Learning)</p>
-<p><strong>Year:</strong> 2024</p>
-<a href="image/certificate.jpg" class="cert-btn">View Certificate</a>
-
-</div>
-<div class="cert-img">
-<img src="image/certificate.jpg" alt="Certificate Image">
-</div>
-</div>
-
-<div class="cert-card">
-<div class="cert-info">
-<h3>Prompt Engineering with GitHub Copilot</h3>
-<p>Microsoft | SkillUP | Simplilearn</p>
-<p><strong>Key Skills:</strong> Prompt Engineering</p>
-<p><strong>Year:</strong> 2025</p>
-<a href="image/micor.jpg" class="cert-btn">View Certificate</a>
-
-</div>
-<div class="cert-img">
-<img src="image/micor.jpg" alt="Certificate Image">
-</div>
-</div>
-
-<div class="cert-card">
-<div class="cert-info">
-<h3>Google AI Essentials</h3>
-<p>Coursera</p>
-<p><strong>Key Skills:</strong> Generative AI & AI Fundamentals , Prompt Engineering</p>
-<p><strong>Year:</strong> 2025</p>
-<a href="image/myimg.jpg" class="cert-btn">View Certificate</a>
-
-</div>
-<div class="cert-img">
-<img src="image/myimg.jpg" alt="Certificate Image">
-</div>
-</div>
-
-</section>
-</div>
-<!-- certificate section end  -->
-
-
-<!-- conatct start section -->
+    <!-- conatct start section -->
     <!-- <div class="bodys">
   <div class="contact-container">
     <h2><i class="fas fa-envelope-open-text"></i> Contact Us</h2> -->
 
     <!-- <form id="contactForm" action="https://formsubmit.co/patelkarunendra82@gmail.com" method="POST"> -->
-      <!-- <form  id="contactForm" action="https://formsubmit.co/patelkarunendra82@gmail.com" method="POST"><!-- Hidden fields for FormSubmit -->
-      
-<!-- 
+    <!-- <form  id="contactForm" action="https://formsubmit.co/patelkarunendra82@gmail.com" method="POST"><!-- Hidden fields for FormSubmit -->
+
+    <!-- 
         <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value=""> --> 
+      <input type="hidden" name="_next" value=""> -->
 
-      <!-- Full Name -->
-      <!-- <div class="input-group">
+    <!-- Full Name -->
+    <!-- <div class="input-group">
         <i class="fas fa-user"></i>
         <input type="text" name="name" placeholder="Full Name *" required>
       </div> -->
 
-      <!-- Email -->
-      <!-- <div class="input-group">
+    <!-- Email -->
+    <!-- <div class="input-group">
         <i class="fas fa-envelope"></i>
         <input type="email" name="email" placeholder="Email *" required>
       </div> -->
 
-      <!-- Phone -->
-      <!-- <div class="input-group">
+    <!-- Phone -->
+    <!-- <div class="input-group">
         <i class="fas fa-phone"></i>
         <input type="text" name="Phone" placeholder="Phone *" required>
       </div> -->
 
-
-
-      <!-- Message -->
-      <!-- <div class="input-group">
+    <!-- Message -->
+    <!-- <div class="input-group">
         <i class="fas fa-comment-dots" id="msg"></i>
         <textarea name="message" placeholder="Your message here..." required></textarea>
       </div>
@@ -259,45 +703,79 @@
     </form>
   </div>
   </div> -->
-<!-- contact end section --> 
+    <!-- contact end section -->
 
+    <!-- footer section start -->
+    <section class="contact-section" id="footer">
+      <div class="contact-header">
+        <i class="fas fa-envelope"></i>
+        <h2>Let’s Connect</h2>
+      </div>
+      <p>
+        Whether you have a project in mind, want to collaborate, Let’s Build
+        Something Amazing Together!
+      </p>
 
+      <div class="contact-details">
+        <p>
+          <i class="fas fa-envelope-open-text"></i> Email:
+          <a href="mailto:patelkarunendra82@gmail.com"
+            >patelkarunendra82@gmail.com</a
+          >
+        </p>
+        <p>
+          <i class="fas fa-phone"></i> Phone:
+          <a href="tel:+919174684969">+91 9174684969</a>
+        </p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Location: Satna 485001, India
+        </p>
+      </div>
 
-<!-- footer section start -->
- <section class="contact-section" id="footer">
-  <div class="contact-header">
-    <i class="fas fa-envelope"></i>
-    <h2>Let’s Connect</h2>
-  </div>
-  <p>
-    Whether you have a project in mind, want to collaborate, Let’s Build Something Amazing Together!
-  </p>
+      <div class="social-links">
+        <a
+          href="https://github.com/karunendra91"
+          target="_blank"
+          class="social-btn github"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/karunendra-patel-188250256/"
+          target="_blank"
+          class="social-btn linkedin"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a
+          href="https://x.com/karunendra25"
+          target="_blank"
+          class="social-btn twitter"
+          title="Twitter"
+        >
+          <i class="fab fa-x-twitter"></i> Twitter
+        </a>
+       
+      
+     
+        <a
+          href="mailto:patelkarunendra82@gmail.com"
+          class="social-btn email"
+          title="Email"
+        >
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
 
-  <div class="contact-details">
-    <p><i class="fas fa-envelope-open-text"></i> Email: 
-      <a href="mailto:saniagadi9@gmail.com">patelkarunendra82@gmail.com</a>
-    </p>
-    <p><i class="fas fa-phone"></i> Phone: 
-      <a href="tel:+919667030024">+91 9174684969</a>
-    </p>
-    <p><i class="fas fa-map-marker-alt"></i> Location: Satna 485001, India</p>
-  </div>
-
-  <div class="social-links">
-    <a href="https://github.com/karunendra91" class="social-btn github">GitHub</a>
-    <a href="https://www.linkedin.com/in/karunendra-patel-188250256/" class="social-btn linkedin">LinkedIn</a>
-    <a href="#" class="social-btn twitter">Twitter</a>
-  </div>
-
-  <p class="footer-text">Designed by <span>♥</span>  karunendra</p>
-</section>
-
-
-<!-- FontAwesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <p class="footer-text">
+        Designed with <span class="heart">♥</span> by
+        <strong>Karunendra Singh</strong>
+      </p>
+      <p class="footer-meta">© <span id="year"></span> All rights reserved</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
-
-    </body>
-    </html>
-    
+  </body>
+</html>
