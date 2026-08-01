@@ -204,25 +204,29 @@ skillCards.forEach(card => {
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
-    const name = document.querySelector("input[name='name']").value.trim();
-    const email = document.querySelector("input[name='email']").value.trim();
-    const phone = document.querySelector("input[name='Phone']").value.trim();
-    const message = document.querySelector("textarea[name='message']").value.trim();
+    e.preventDefault();
+
+    const name = contactForm.querySelector("input[name='name']").value.trim();
+    const email = contactForm.querySelector("input[name='email']").value.trim();
+    const phone = contactForm.querySelector("input[name='phone']").value.trim();
+    const message = contactForm.querySelector("textarea[name='message']").value.trim();
 
     if (!name || !email || !phone || !message) {
-      e.preventDefault();
-      alert("Please fill in all fields");
+      showNotification("Please fill in all fields", "error");
       return false;
     }
 
-    if (!email.includes("@")) {
-      e.preventDefault();
-      alert("Please enter a valid email");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showNotification("Please enter a valid email", "error");
       return false;
     }
 
-    // Show success message
-    showNotification("Message sent successfully! ✓", "success");
+    showNotification("Thanks! Your message has been sent successfully. 😊", "success");
+    contactForm.reset();
+
+    setTimeout(() => {
+      contactForm.submit();
+    }, 1800);
   });
 }
 
