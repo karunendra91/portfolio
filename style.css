@@ -1445,7 +1445,7 @@ h6,
 
 /* ===== SKILLS SECTION ===== */
 .skills-section {
-  padding: 80px 10%;
+  padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 6vw, 10%);
   background: linear-gradient(135deg, #0a0f1c 0%, #051527 100%);
   text-align: center;
   position: relative;
@@ -1469,10 +1469,13 @@ h6,
 }
 
 .skills-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
+  max-width: 100%;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: clamp(1.75rem, 4vw, 3rem);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   animation: fadeInDown 0.8s ease-out;
   color: var(--accent-color);
@@ -1496,8 +1499,10 @@ h6,
 
 .skills-grid {
   display: grid;
-  gap: 2rem;
-  max-width: 1000px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
@@ -1505,22 +1510,31 @@ h6,
 .skill-group {
   display: grid;
   gap: 1rem;
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.45);
 }
 
 .skill-group-title {
   color: var(--primary-color);
   font-size: 1.1rem;
+  overflow-wrap: anywhere;
 }
 
 .skill-group-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 110px), 1fr));
+  gap: clamp(0.6rem, 1.8vw, 1.25rem);
+  min-width: 0;
 }
 
 .skill-card {
   background: linear-gradient(135deg, #1a253f 0%, #264f78 100%);
-  padding: 1.2rem 0.8rem;
+  min-width: 0;
+  min-height: 110px;
+  padding: clamp(0.7rem, 1.8vw, 1.2rem) 0.65rem;
   border-radius: 12px;
   transition: var(--transition);
   display: flex;
@@ -1652,6 +1666,23 @@ h6,
   z-index: 2;
   text-align: center;
   letter-spacing: 0.3px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (hover: none) {
+  .skill-card:hover {
+    transform: none;
+  }
+
+  .skill-card:hover i {
+    transform: none;
+  }
 }
 
 /* ===== PROJECTS & CERTIFICATES SECTION ===== */
@@ -3597,7 +3628,7 @@ footer::before {
   }
 
   .skill-group-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
     gap: 1.2rem;
   }
 
@@ -3702,7 +3733,7 @@ footer::before {
   }
 
   .skill-group-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 100px), 1fr));
     gap: 0.8rem;
   }
 
@@ -3863,7 +3894,7 @@ footer::before {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 0.6rem;
   }
 
