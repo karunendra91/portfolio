@@ -75,6 +75,30 @@ const observer = new IntersectionObserver((entries) => {
 
 cards.forEach(card => observer.observe(card));
 
+/* ===== EXPERIENCE SECTION ANIMATIONS ===== */
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll("#experience .exp-item, #education .exp-item");
+
+  // Intersection observer to reveal items
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('in-view'), i * 150);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach(it => io.observe(it));
+  } else {
+    items.forEach(it => it.classList.add('in-view'));
+  }
+
+  // (removed timeline-fill animation — timeline reveal handled via .in-view)
+
+});
+
 /* ===== NAVBAR PROGRESS BAR ===== */
 const progressBar = document.querySelector(".navbar-progress-bar");
 
@@ -208,11 +232,10 @@ if (contactForm) {
 
     const name = contactForm.querySelector("input[name='name']").value.trim();
     const email = contactForm.querySelector("input[name='email']").value.trim();
-    const phone = contactForm.querySelector("input[name='phone']").value.trim();
     const message = contactForm.querySelector("textarea[name='message']").value.trim();
 
-    if (!name || !email || !phone || !message) {
-      showNotification("Please fill in all fields", "error");
+    if (!name || !email || !message) {
+      showNotification("Please enter your name, email, and message", "error");
       return false;
     }
 

@@ -38,6 +38,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#hero" class="nav-link">Home</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#skills-section" class="nav-link">Skills</a></li>
           <li><a href="#project" class="nav-link">Projects</a></li>
           <li><a href="#certificate" class="nav-link">Certifications</a></li>
@@ -77,10 +78,10 @@
           <span class="cursor">💻</span>
         </h2>
         <p class="hero-description">
-          A passionate Full Stack Web Developer crafting responsive, interactive
-          web experiences. Specializing in modern frontend technologies with a
-          strong backend foundation. Currently pursuing B.Tech and building
-          projects that merge creativity with functionality.
+          I build polished, user-focused web experiences that blend clean design,
+          strong frontend engineering, and practical backend thinking. As a B.Tech
+          student and aspiring full stack developer, I enjoy turning ideas into
+          responsive products that are both functional and memorable.
         </p>
 
         <!-- CTA Buttons -->
@@ -133,41 +134,117 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="section-title">Education 🎓</h2>
 
-      <div class="edu-cards-wrapper">
-        <div class="edu-card" data-animate>
-          <div class="edu-icon">
+
+
+    <!-- Education Section -->
+    <!-- Education Section (timeline like Experience) -->
+    <section id="education" class="education">
+      <h2 class="section-title" style="text-align: center;">Education 🎓</h2>
+      <p class="section-subtitle">Academic milestones and formal training.</p>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item">
+          <div class="exp-node">
             <i class="fas fa-graduation-cap"></i>
           </div>
-          <div class="edu-content">
-            <span class="edu-date">2022-2026 | Completed</span>
-            <h3>Bachelor of Engineering in Computer Science</h3>
-            <p class="edu-institute">
-              Vindhya Institute of Technology & Science Satna , 485001 | VITS
-            </p>
-            <p class="edu-detail">CGPA: 7.62/10</p>
+
+          <div class="exp-card">
+            <div class="exp-top">
+              <span class="exp-role">Bachelor of Engineering in Computer Science</span>
+              <span class="exp-dates">2022 — 2026</span>
+            </div>
+            <div class="exp-company">Vindhya Institute of Technology & Science Satna</div>
+            <div class="exp-hash">commit <span>vits2026</span> — "completed graduation"</div>
+            <p class="exp-desc">CGPA: 7.62/10. Focused on programming, web development, and software engineering fundamentals.</p>
+            <div class="exp-tags">
+              <span>Java</span>
+              <span>SQL</span>
+              <span>Web Dev</span>
+            </div>
           </div>
         </div>
 
-        <div class="edu-card" data-animate>
-          <div class="edu-icon">
+        <div class="exp-item">
+          <div class="exp-node">
             <i class="fas fa-book"></i>
           </div>
-          <div class="edu-content">
-            <span class="edu-date">2020-2022 | Completed</span>
-            <h3>MP-Board | Higher Secondary School</h3>
-            <p class="edu-institute">
-              Govt. of Higher Secondray School Sitpura Satna, Satna 485001
-            </p>
-            <!-- <p class="edu-detail">Percentage: 68%</p> -->
+
+          <div class="exp-card">
+            <div class="exp-top">
+              <span class="exp-role">Higher Secondary School</span>
+              <span class="exp-dates">2020 — 2022</span>
+            </div>
+            <div class="exp-company">Govt. of Higher Secondary School Sitpura Satna</div>
+            <div class="exp-hash">commit <span>mp2022</span> — "higher secondary"</div>
+            <p class="exp-desc">Completed higher secondary with emphasis on mathematics and science.</p>
+            <div class="exp-tags">
+              <span>Math</span>
+              <span>Science</span>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
     <!-- Education section end -->
+
+    <!-- Experience Section (timeline) -->
+
+    <section id="experience">
+
+      <h2 class="section-title" style="text-align: center;">Experience</h2>
+      <p class="section-subtitle">My professional journey and hands-on experience in software development.</p>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item">
+
+          <div class="exp-node">
+            <i class="fa-solid fa-code-commit"></i>
+          </div>
+
+          <div class="exp-card">
+
+            <div class="exp-top">
+
+              <span class="exp-role">Software Development Trainee</span>
+
+              <span class="exp-dates">Jul 2026 — Present</span>
+
+            </div>
+
+            <div class="exp-company">QSpiders, Noida <span class="current-badge">Currently Working</span></div>
+
+            <div class="exp-hash">commit <span>qsp2026</span> — "start developer training"</div>
+
+            <p class="exp-desc">Currently undergoing software development training and internship focused on Java, SQL, web development, and programming fundamentals.</p>
+
+            <div class="exp-tags">
+
+              <span>Java</span>
+              <span>SQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+                <span>JDBC</span>
+           
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
 
     <!-- Skills Section start -->
 
@@ -179,51 +256,93 @@
 
       <!-- Skills Grid -->
       <div class="skills-grid">
-        <div class="skill-card">
-          <i class="devicon-html5-plain colored"></i>
-          <p class="skill-name">HTML5</p>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skill-group-grid">
+            <div class="skill-card">
+              <i class="devicon-html5-plain colored"></i>
+              <p class="skill-name">HTML5</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-css3-plain colored"></i>
+              <p class="skill-name">CSS3</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-react-original colored"></i>
+              <p class="skill-name">React</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <p class="skill-name">Bootstrap</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <p class="skill-name">Tailwind CSS</p>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="devicon-css3-plain colored"></i>
-          <p class="skill-name">CSS3</p>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skill-group-grid">
+            <div class="skill-card">
+              <i class="devicon-java-plain colored"></i>
+              <p class="skill-name">Java</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-plug"></i>
+              <p class="skill-name">JDBC</p>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="devicon-javascript-plain colored"></i>
-          <p class="skill-name">JavaScript</p>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Database</h3>
+          <div class="skill-group-grid">
+            <div class="skill-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <p class="skill-name">MySQL</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <p class="skill-name">SQL</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-oracle-original colored"></i>
+              <p class="skill-name">Oracle</p>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="devicon-react-original colored"></i>
-          <p class="skill-name">React</p>
-        </div>
-        <div class="skill-card">
-          <i class="devicon-bootstrap-plain colored"></i>
-          <p class="skill-name">Bootstrap</p>
-        </div>
-        <div class="skill-card">
-          <i class="devicon-tailwindcss-plain colored"></i>
-          <p class="skill-name">Tailwind CSS</p>
-        </div>
-         <div class="skill-card">
-          <i class="devicon-java-plain colored"></i>
-          <p class="skill-name">Java</p>
-        </div>
-       <div class="skill-card">
-          <i class="devicon-mysql-plain colored"></i>
-          <p class="skill-name">MySQL</p>
-        </div>
-       
-         
-        <div class="skill-card">
-          <i class="devicon-git-plain colored"></i>
-          <p class="skill-name">Git</p>
-        </div>
-        <div class="skill-card">
-          <i class="devicon-github-original colored"></i>
-          <p class="skill-name">GitHub</p>
-        </div>
-        <div class="skill-card">
-          <i class="devicon-vscode-plain colored"></i>
-          <p class="skill-name">VS Code</p>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Technology &amp; Tools</h3>
+          <div class="skill-group-grid">
+            <div class="skill-card">
+              <i class="devicon-git-plain colored"></i>
+              <p class="skill-name">Git</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-github-original colored"></i>
+              <p class="skill-name">GitHub</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-netlify-plain colored"></i>
+              <p class="skill-name">Netlify</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-vscode-plain colored"></i>
+              <p class="skill-name">Visual Studio Code</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-intellij-plain colored"></i>
+              <p class="skill-name">IntelliJ IDEA</p>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-eclipse-plain colored"></i>
+              <p class="skill-name">Eclipse IDE</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
